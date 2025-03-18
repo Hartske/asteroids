@@ -38,7 +38,7 @@ def main():
                 sys.exit("Game over!")
             for bullet in shots:
                 if obj.collisions(bullet) == True:
-                    obj.kill()
+                    obj.split()
                     bullet.kill()
 
         screen.fill("#000000")
